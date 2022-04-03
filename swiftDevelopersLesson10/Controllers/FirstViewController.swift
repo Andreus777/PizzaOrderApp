@@ -9,7 +9,7 @@ import UIKit
 
 class FirstViewController: UIViewController {
     
-    let button = UIButton()
+    let button = UIButton(type: .system)
     let emailLabel = UILabel()
     let passwordLabel = UILabel()
     let phoneTextField = UITextField()
@@ -52,6 +52,9 @@ class FirstViewController: UIViewController {
         button.setTitle("Войти", for: .normal)
         button.backgroundColor = .orange
         button.tintColor = .white
+        button.layer.cornerRadius = 6
+        button.layer.borderWidth = 2
+        button.layer.borderColor = UIColor.red.cgColor
         view.addSubview(button)
         button.addTarget(self, action: #selector(enterButtonTapped(sender:)), for: .touchUpInside)
     }
