@@ -16,6 +16,7 @@ class SecondViewController: UIViewController {
         super.viewDidLoad()
         title = "Food"
         pizzaLabelSetup()
+        sushiLabelSetup()
 
     }
     
@@ -23,9 +24,18 @@ class SecondViewController: UIViewController {
    // MARK: - setUp labels
     
     fileprivate func pizzaLabelSetup(){
-        pizzaLabel.frame = CGRect(x: 100, y: 200, width: 200, height: 50)
+        pizzaLabel.frame = CGRect(x: 150, y: 200, width: 200, height: 50)
         pizzaLabel.textColor = .orange
+        pizzaLabel.backgroundColor = .lightGray
         pizzaLabel.text = "Пицца"
         view.addSubview(pizzaLabel)
+    }
+    
+    fileprivate func sushiLabelSetup(){
+        sushiLabel.frame = CGRect(x: 150, y: 400, width: 200, height: 50)
+        sushiLabel.textColor = .orange
+        sushiLabel.backgroundColor = .lightGray
+        sushiLabel.text = "Cуши"
+        view.addSubview(sushiLabel)
     }
 }
