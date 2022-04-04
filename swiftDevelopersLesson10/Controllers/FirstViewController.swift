@@ -48,7 +48,7 @@ class FirstViewController: UIViewController {
     }
     
     fileprivate func setUpEnterButton(){
-        button.frame = CGRect(x: 120, y: 750, width: 200, height: 40)
+        button.frame = CGRect(x: 110, y: 750, width: 200, height: 40)
         button.setTitle("Войти", for: .normal)
         button.backgroundColor = .orange
         button.tintColor = .white

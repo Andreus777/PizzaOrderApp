@@ -43,7 +43,7 @@ class ThirdViewController: UIViewController {
     fileprivate func setupImageView2(){
         
         imageViewSecond.frame = CGRect(x: 20, y: 290, width: 150, height: 150)
-        imageViewSecond.image = UIImage(named: "pizzaBig")
+        imageViewSecond.image = UIImage(named: "pizzaBig2")
         view.addSubview(imageViewSecond)
     }
 
@@ -65,6 +65,8 @@ class ThirdViewController: UIViewController {
         labelTwo.textColor = .black
         view.addSubview(labelTwo)
     }
+    
+    //MARK: Setup Buttons
     
     fileprivate func setupButton(){
         buttonOne.frame = CGRect(x: 320, y: 170, width: 40, height: 40)
@@ -97,9 +99,16 @@ class ThirdViewController: UIViewController {
         switch sender {
         
         case buttonOne:
-            print("buttomnOne tapped")
+            let fourthVC = FourthViewController()
+            fourthVC.label.text = labelOne.text
+            fourthVC.imageView.image = imageViewFirst.image
+            navigationController?.pushViewController(fourthVC, animated: false)
+        
         case buttonTwo:
-            print("buttonTwoTapped")
+            let fourthVC = FourthViewController()
+            fourthVC.label.text = labelTwo.text
+            fourthVC.imageView.image = imageViewSecond.image
+            navigationController?.pushViewController(fourthVC, animated: false)
         default:
             break
         }
