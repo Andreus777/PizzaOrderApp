@@ -138,6 +138,20 @@ class FourthViewController: UIViewController {
     @objc func enterButtonTapped(sender: UIButton){
         if sender == payButton{
             let fifthVC = FifthViewController()
+            fifthVC.pizzaName = label.text
+            
+            if switch1.isOn {
+                fifthVC.labelForSwitch2.text = labelOne.text
+            }
+            if switch2.isOn {
+                fifthVC.labelForSwitch3.text = labelTwo.text
+            }
+            if switch3.isOn {
+                fifthVC.labelForSwitch4.text = labelThree.text
+            }
+            if switch4.isOn {
+                fifthVC.labelForSwitch5.text = labelFourth.text
+            }
             navigationController?.pushViewController(fifthVC, animated: false)
         }
     }
