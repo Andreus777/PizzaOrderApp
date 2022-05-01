@@ -51,7 +51,7 @@ class FirstViewController: UIViewController {
         button.frame = CGRect(x: 110, y: 750, width: 200, height: 40)
         button.setTitle("Войти", for: .normal)
         button.backgroundColor = .orange
-        button.tintColor = .white
+        button.tintColor = .green
         button.layer.cornerRadius = 6
         button.layer.borderWidth = 2
         button.layer.borderColor = UIColor.red.cgColor

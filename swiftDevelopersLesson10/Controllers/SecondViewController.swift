@@ -42,7 +42,7 @@ class SecondViewController: UIViewController {
         sushiButton.frame = CGRect(x: 7, y: 215, width: 400, height: 100)
         sushiButton.setTitle("Cуши", for: .normal)
         sushiButton.tintColor = .white
-        sushiButton.backgroundColor = .orange
+        sushiButton.backgroundColor = .green
         sushiButton.layer.borderWidth = 3
         sushiButton.layer.borderColor = UIColor.lightGray.cgColor
         sushiButton.layer.cornerRadius = 5
